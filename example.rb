@@ -91,3 +91,6 @@ puts Date.new
 # Printは改行がない　戻り値はnil
 # Pは改行がある　戻り値は渡されたオブジェクト　\nの改行が使えない
 # ppはハッシュや配列を整形して表示してくれる
+
+'abc'.inspect
+'abc'.to_s
