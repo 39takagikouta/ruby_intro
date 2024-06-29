@@ -13,5 +13,8 @@ class WordSynth
       words = effect.call(words)
     end
     words
+    @effects.inject(original_words) do |words, effect|
+      effect.call(words)
+    end
   end
 end
