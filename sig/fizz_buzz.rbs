@@ -1,0 +1,17 @@
+# TypeProf 0.21.11
+
+# Revealed types
+#  /Users/takagikouta/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/debug-1.9.2/lib/debug/thread_client.rb:1252 #=> [String, nil, untyped]
+#  /Users/takagikouta/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/debug-1.9.2/lib/debug/thread_client.rb:505 #=> nil
+#  /Users/takagikouta/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/debug-1.9.2/lib/debug/tracer.rb:159 #=> nil
+
+# Classes
+class Object
+  private
+  def fizz_buzz: (Integer n) -> (Integer | String)
+end
+
+class FizzBuzzTest
+  def test_fizz_buzz: -> untyped
+  def assert_equal: (untyped, untyped) -> void
+end
